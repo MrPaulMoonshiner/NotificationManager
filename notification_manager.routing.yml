@@ -1,0 +1,31 @@
+entity.notification_manager_config.collection:
+  path: '/admin/config/system/notification-config'
+  defaults:
+    _entity_list: 'notification_manager_config'
+    _title: 'Notification manager`s configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.notification_manager_config.add_form:
+  path: '/admin/config/system/notification-config/add'
+  defaults:
+    _entity_form: 'notification_manager_config.add'
+    _title: 'Configure new notification.'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.notification_manager_config.edit_form:
+  path: '/admin/config/system/notification-config/{notification_manager_config}'
+  defaults:
+    _entity_form: 'notification_manager_config.edit'
+    _title: 'Edit notification'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.notification_manager_config.delete_form:
+  path: '/admin/config/system/notification-config/{notification_manager_config}/delete'
+  defaults:
+    _entity_form: 'notification_manager_config.delete'
+    _title: 'Delete notification'
+  requirements:
+    _permission: 'administer site configuration'

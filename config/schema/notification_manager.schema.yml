@@ -1,0 +1,45 @@
+notification_manager.notification.config:
+  type: config_entity
+  label: notification
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: label
+      label: Label
+    description:
+      type: string
+      label: Description
+    message:
+      type: string
+      label: Message
+    channels:
+      type: array
+      label: Endpoint
+    telegram:
+      type: array
+      label: Telegram
+    sms:
+      type: array
+      label: SMS
+    slack:
+      type: array
+      label: Slack
+    db:
+      type: array
+      label: Database
+#      mapping:
+#        allowed_values:
+#          type: sequence
+#          label: 'Allowed values list'
+#          sequence:
+#            type: mapping
+#            label: 'Allowed value with label'
+#            mapping:
+#              value:
+#                type: array
+#                label: 'Value'
+#              label:
+#                type: label
+#                label: 'Label'

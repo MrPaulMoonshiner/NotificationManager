@@ -1,0 +1,5 @@
+entity.notification_manager_config.add_form:
+  route_name: 'entity.notification_manager_config.add_form'
+  title: 'Create notification'
+  parent: system.admin_structure
+  description: 'List of notifications.'

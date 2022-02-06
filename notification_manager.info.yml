@@ -1,0 +1,7 @@
+name: Notification manager
+description: This module provide functionality for send notification to diferent endpoints.
+package: Notification manager
+type: module
+core_version_requirement: ^8.8.0 || ^9
+configure: entity.notification_manager_config.collection
+
